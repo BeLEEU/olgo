@@ -1,3 +1,5 @@
+
+//23找到链表第一个重合点
 //定义计数器
 //遍历两个链表直到为空，统计链表节点个数
 //算出差值，长点的链表先走差值的步数
@@ -5,13 +7,13 @@
 class ListNode {
   val: number
   next: ListNode | null
-  constrcutor(val?: number, next?: ListNode | null) {
+  constructor(val: number, next: ListNode | null) {
     this.val = val == undefined ? 0 : val;
     this.next = next == null ? null : next;
   }
 }
 
-function getInsertionNode(headA: ListNode | null, headB: ListNode | null) {
+function getInsertionNode(headA: ListNode | null, headB: ListNode | null): ListNode | null {
   
   let countA: number = 0;
   let countB: number = 0;
